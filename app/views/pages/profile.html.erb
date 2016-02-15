@@ -10,14 +10,13 @@
     </div>
   </div>
   <div class="col-md-6">
-    <div class="panel panel-default">
-      <div class="panel-body"><p>tweets</p><br>
-        <p>tweets</p><br>
-        <p>tweets</p><br>
-        <p>tweets</p><br>
-        <p>tweets</p><br>
+    <% for @p in @posts %>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <p><%= @p.content %></p>
+        </div>
       </div>
-    </div>
+    <% end %>
   </div>
   <div class="col-md-3">
     <div class="row">
