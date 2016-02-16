@@ -1,2 +1,19 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<% if !user_signed_in? %>
+  <div id="headerwrap">
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <img class="landing-logo" src="/logo.png"></img>
+          <br>
+          <h2>Welcome to Seed.</h2>
+          <p>People are always sharing moments. <br>Now you can catch a glimpse nearby.</p>
+          <button class="btn btn-primary"><%= link_to('Join Seed', new_user_registration_path) %></button>
+          <button class="btn btn-default"><%= link_to('Explore Nearby', new_user_registration_path) %></button>
+          <br>
+        </div>
+      </div><!-- /row -->
+      </div> <!-- /container -->
+  </div><!-- /headerwrap -->
+<% else %>
+  redirect_to "/profile"
+<% end %>

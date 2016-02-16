@@ -13,7 +13,11 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
+h1, h2, h3, h4, h5, h6, a, li, i, button, input, label {
+  font-family: 'Montserrat', sans-serif; font-weight: 400;
+}
 
 body
 {
@@ -22,11 +26,11 @@ body
 
 .navbar
 {
-  background-color: #2ecc71;
+  // background-color: #2ecc71;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #ecf0f1;
+    // color: #ecf0f1;
 }
 
 .navbar-default .navbar-brand {
@@ -36,8 +40,237 @@ body
     left: 50%;
 }
 
+.landing-logo {
+    padding: 6px 6px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 60px;
+}
+
 .btn-primary {
     color: #fff;
-    background-color: #16a085;
-    border-color: #16a085;
+    background-color: #2ecc71;
+    border-color: #2ecc71;
 }
+
+.btn-primary a {
+    font-weight: 700;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.btn-default a {
+    color: black;
+}
+
+.container-index {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#headerwrap {
+    min-height: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+@charset "utf-8";
+
+.doc {
+  font-size: 14px;
+  margin: 0; }
+  .doc:before,
+  .doc:after {
+    opacity: .2;
+    padding: 6px;
+    font-style: normal;
+    position: relative;
+    content: "•"; }
+  .doc a {
+    color: rgba(0, 0, 0, 0.3); }
+    .doc a:hover {
+      color: #666; }
+
+.welcome {
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: .9s; }
+
+@-webkit-keyframes welcome {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+ .caption {
+     height: 200px;
+     overflow: hidden;
+     /*min-height: auto;*/
+ }
+
+
+ /*	################################################################
+ 	1. GENERAL STRUCTURES
+ ################################################################# */
+ 	* {
+ 		margin: 0;
+ 		padding: 0px;
+ 	}
+
+ body {
+ 	/*background: #ffffff;*/
+ 	margin: 0;
+ 	height: 100%;
+ 	color: #333333;
+  -webkit-font-smoothing: antialiased;
+ 	font-family: 'Montserrat', sans-serif;
+ 	font-weight: 400;
+  font-size: 12px;
+  font-family: sans-serif;
+  // padding-top: 70px;
+  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+ h1, h2, h3, h4, h5, h6 {
+ 	font-family: 'Montserrat', sans-serif;
+ 	font-weight: 700;
+  line-height: normal;
+ }
+
+ h1
+ {
+   font-size: 2.4em;
+   word-wrap: normal;
+ }
+
+ h2
+ {
+   font-size: 2em;
+   margin-left: 15px;
+   color: black;
+   margin-left: 0px;
+   font-weight: 100;
+ }
+
+ h3 {
+     font-size: 1.4em;
+     margin-left: 15px;
+     color: black;
+     margin-left: 0px;
+     font-weight: 100;
+ }
+
+ h4
+ {
+   font-size: 1.2em;
+   font-weight: 100;
+   word-wrap: normal;
+ }
+
+ h6
+ {
+   font-size: 1em;
+   font-weight: 100;
+   word-wrap: normal;
+   color: grey;
+ }
+
+ p {
+ 	padding: 0;
+ 	margin-bottom: 1em;
+  /*padding-left: 6px;*/
+ 	/*font-family: 'Montserrat', sans-serif;*/
+  font-family: "Helvetica Neue", "Segoe UI", "Roboto", Helvetica, Arial, sans-serif;
+ 	font-weight: 300;
+  font-size: 14px;
+  line-height: normal;
+ 	color: #384452;
+ 	margin-top: 10px;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+ }
+
+ ol, ul {
+    /*margin-top: 0;*/
+    /*margin-bottom: 10px;*/
+    font-family: "Helvetica Neue", "Segoe UI", "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    margin-left: 1.6em;
+    font-size: 17px;
+    line-height: 1.8em;
+    }
+
+ img {
+ 	height: auto;
+ 	max-width: 100%;
+ }
+
+ a {
+  color: white;
+  padding: 0;
+ 	margin: 0;
+ 	text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+ 	-webkit-transition: background-color .4s linear, color .4s linear;
+ 	-moz-transition: background-color .4s linear, color .4s linear;
+ 	-o-transition: background-color .4s linear, color .4s linear;
+ 	-ms-transition: background-color .4s linear, color .4s linear;
+ 	transition: background-color .4s linear, color .4s linear;
+ }
+ a:hover,
+ a:focus {
+   text-decoration: none;
+   color:#01b2fe;
+ }
+
+ ::-moz-selection  {
+ 	color: #fff;
+ 	text-shadow:none;
+ 	background:#2B2E31;
+ }
+ ::selection {
+ 	color: #fff;
+ 	text-shadow:none;
+ 	background:#2B2E31;
+ }
+
+ .centered {
+ 	text-align: center
+ }
+
+ /*	################################################################
+ 	BOOTSTRAP MODIFICATIONS & TWEAKS
+ ################################################################# */
+
+
+ /*	################################################################
+ 	SITE WRAPS
+ ################################################################# */
+
+
+
+ /*	################################################################
+ 	PAGE CONFIGURATIONS
+ ################################################################# */
+ /* General Tweaks */
