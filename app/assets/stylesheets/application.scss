@@ -13,3 +13,31 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+body
+{
+  background-color: transparentize(#ecf0f1, 0.8);;
+}
+
+.navbar
+{
+  background-color: #2ecc71;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ecf0f1;
+}
+
+.navbar-default .navbar-brand {
+    color: #ecf0f1;
+    font-weight: 1000;
+    position: absolute;
+    left: 50%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #16a085;
+    border-color: #16a085;
+}
